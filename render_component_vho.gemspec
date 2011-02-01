@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{render_component_vho}
-  s.version = "3.0.3"
+  s.version = "2.3.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Heinemeier Hansson"]
-  s.date = %q{2011-01-26}
+  s.date = %q{2011-02-01}
   s.description = %q{Components allow you to call other actions for their rendered response while executing another action}
   s.email = %q{david@loudthinking.com}
   s.extra_rdoc_files = [
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README",
     "Rakefile",
@@ -45,24 +47,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<shoulda>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<railties>, ["~> 3.0.0"])
+      s.add_runtime_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_runtime_dependency(%q<rcov>, ["= 0.9.9"])
+      s.add_runtime_dependency(%q<railties>, ["~> 2.3.10"])
     else
-      s.add_dependency(%q<shoulda>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<railties>, ["~> 3.0.0"])
+      s.add_dependency(%q<rcov>, ["= 0.9.9"])
+      s.add_dependency(%q<railties>, ["~> 2.3.10"])
     end
   else
-    s.add_dependency(%q<shoulda>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-    s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<railties>, ["~> 3.0.0"])
+    s.add_dependency(%q<rcov>, ["= 0.9.9"])
+    s.add_dependency(%q<railties>, ["~> 2.3.10"])
   end
 end
 
