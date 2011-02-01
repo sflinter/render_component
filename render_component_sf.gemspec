@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{render_component_vho}
+  s.name = %q{render_component_sf}
   s.version = "2.3.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -27,12 +27,12 @@ Gem::Specification.new do |s|
     "lib/render_component.rb",
     "lib/render_component/components.rb",
     "lib/render_component/version.rb",
-    "lib/render_component_vho.rb",
-    "render_component_vho.gemspec",
+    "lib/render_component_sf.rb",
+    "render_component_sf.gemspec",
     "test/abstract_unit.rb",
     "test/components_test.rb"
   ]
-  s.homepage = %q{http://github.com/vhochstein/render_component}
+  s.homepage = %q{http://github.com/sflinter/render_component}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
@@ -49,16 +49,16 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_runtime_dependency(%q<rcov>, ["= 0.9.9"])
-      s.add_runtime_dependency(%q<railties>, ["~> 2.3.10"])
+      s.add_runtime_dependency(%q<rails>, ["~> 2.3.10"])
     else
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_dependency(%q<rcov>, ["= 0.9.9"])
-      s.add_dependency(%q<railties>, ["~> 2.3.10"])
+      s.add_dependency(%q<rails>, ["~> 2.3.10"])
     end
   else
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
     s.add_dependency(%q<rcov>, ["= 0.9.9"])
-    s.add_dependency(%q<railties>, ["~> 2.3.10"])
+    s.add_dependency(%q<rails>, ["~> 2.3.10"])
   end
 end
 
