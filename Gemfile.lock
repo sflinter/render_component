@@ -14,4 +14,4 @@ PLATFORMS
 
 DEPENDENCIES
   jeweler (~> 1.5.2)
-  rcov
+  rcov (= 0.9.9)
