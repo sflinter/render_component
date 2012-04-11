@@ -1,3 +1,3 @@
 source :gemcutter
-gem "jeweler", "~> 1.5.2"
-gem "rcov", "0.9.9"
+gem "jeweler", "~> 1.8.3"
+gem "rcov", "1.0.0"

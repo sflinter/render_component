@@ -22,7 +22,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Components allow you to call other actions for their rendered response while executing another action}
   gem.email = "david@loudthinking.com"
   gem.authors = ["David Heinemeier Hansson"]
-  gem.add_runtime_dependency 'rails', '~>2.3.10'
+  gem.add_runtime_dependency 'rails', '~>2.3.14'
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
@@ -48,7 +48,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 desc 'Generate documentation for the components plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
